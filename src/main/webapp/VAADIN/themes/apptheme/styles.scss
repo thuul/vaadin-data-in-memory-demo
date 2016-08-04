@@ -1,0 +1,35 @@
+@import "apptheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in apptheme.scss
+
+.apptheme{
+    @include addons;
+    @include apptheme;
+}
+
+.body-ground{
+    background-color: #fff
+}
+
+.banner-head{
+    margin: 10px 0 20px 0;
+    font: bold 21px Arial, sans-serif;
+    color: #666666
+}
+
+.save-btn{
+    background-color: #2c9720;
+    color: #fff
+}
+
+.add-btn{
+    background-color: #0957a6;
+    color: #fff
+}
+
+.delete-btn{
+    background-color: red;
+    color: #fff
+}
